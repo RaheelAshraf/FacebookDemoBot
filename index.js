@@ -80,7 +80,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
 
     const exit = (agent) => {
 
-        agent.add(`Good bye from webhook`); 
+        agent.add(`Bye. Will See You Again`); 
     }
 
     let intentMap = new Map();
