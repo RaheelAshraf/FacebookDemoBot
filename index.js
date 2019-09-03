@@ -78,6 +78,11 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         return response.json(Response);
     }
 
+    const exit = (agent) => {
+
+        agent.add(`Good bye from webhook`); 
+    }
+
     let intentMap = new Map();
     intentMap.set('Default Welcome Intent', welcome);
     intentMap.set('Default Fallback Intent', fallback);
@@ -90,5 +95,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     intentMap.set('book now', BookNow);
     intentMap.set('book now - yes', BookNowYes);
     intentMap.set('book now - no', BookNowNo);
+    intentMap.set('Exit', exit);
     _agent.handleRequest(intentMap);
 });

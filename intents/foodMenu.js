@@ -6,58 +6,85 @@ module.exports = {
 
             "fulfillmentMessages": [
                 {
-                    "card": {
-                        "title": "Deals",
-                        "subtitle": "",
-                        "imageUri": "https://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/messy-hotel-room0416.jpg?itok=dfjA04Oh",
-                        "buttons": [
-                            {
-                                "text": "Items",
-                                "webview_height_ratio": "tall"
-                            },
-                        ]
-                    },
-                    "platform": "FACEBOOK"
-                }, {
-                    "card": {
-                        "title": "Deals",
-                        "subtitle": "",
-                        "imageUri": "https://amp.businessinsider.com/images/5527f47fdd0895c44f8b459e-750-422.jpg",
-                        "buttons": [
-                            {
-                                "text": "Items"
-                            },
-                        ]
-                    },
-                    "platform": "FACEBOOK"
-                }, {
-                    "card": {
-                        "title": "Deals",
-                        "subtitle": "",
-                        "imageUri": "https://www.midtownhotel.com/files/4206/2017JeffCutlerPhoto-MidtownHotel-5327-HDR_Copy.jpg",
-                        "buttons": [
-                            {
-                                "text": "Items"
-                            },
-                        ]
-                    },
-                    "platform": "FACEBOOK"
-                }, {
-                    "card": {
-                        "title": "Deals",
-                        "subtitle": "",
-                        "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_NdZPfSGpDuKB56QWI5wzY3y-rHNTd-YiD8_UCkVokpbhbnhPiA",
-                        "buttons": [
-                            {
-                                "text": "Items"
-                            },
-                        ]
+                    "payload": {
+                        "facebook": {
+                            "attachment": {
+                                "payload": {
+                                    "template_type": "generic",
+                                    "elements": [
+                                        {
+                                            "image_url": "https://mcdonalds.com.pk/wp-content/uploads/McRoyale-600x600.png",
+                                            "title": "Chicken Burgers",
+                                            "buttons": [
+                                                {
+                                                    "type": "postback",
+                                                    "title": "Order",
+                                                    "payload": "Order"
+                                                }
+                                            ],
+                                            "subtitle": "Price: $5"
+                                        },
+                                        {
+                                            "image_url": "https://mcdonalds.com.pk/wp-content/uploads/Crispy-Chicken-600x600.png",
+                                            "title": "Crispy Chicken",
+                                            "buttons": [
+                                                {
+                                                    "type": "postback",
+                                                    "title": "Order",
+                                                    "payload": "Order"
+                                                }
+                                            ],
+                                            "subtitle": "Price: $4"
+                                        },
+                                        {
+                                            "image_url": "https://mcdonalds.com.pk/wp-content/uploads/Double-Cheese-Burger-1.png",
+                                            "title": "Beef Burgers",
+                                            "buttons": [
+                                                {
+                                                    "type": "postback",
+                                                    "title": "Order",
+                                                    "payload": "Order"
+                                                }
+                                            ],
+                                            "subtitle": "Price: $6"
+                                        },
+                                        {
+                                            "image_url": "https://mcdonalds.com.pk/wp-content/uploads/Chocolate-and-Strawberry-Sundae-600x600.png",
+                                            "title": "Sides and Deserts",
+                                            "buttons": [
+                                                {
+                                                    "type": "postback",
+                                                    "title": "Order",
+                                                    "payload": "Order"
+                                                }
+                                            ],
+                                            "subtitle": "Price: $2"
+                                        },
+                                        {
+                                            "image_url": "https://mcdonalds.com.pk/wp-content/uploads/Coke-Zero-600x600.png",
+                                            "title": "Beverages",
+                                            "buttons": [
+                                                {
+                                                    "type": "postback",
+                                                    "title": "Order",
+                                                    "payload": "Order"
+                                                }
+                                            ],
+                                            "subtitle": "Price: $1"
+                                        },
+                                    ],
+                                    "image_aspect_ratio": "square"
+                                },
+                                "type": "template"
+                            }
+                        }
                     },
                     "platform": "FACEBOOK"
                 },
             ]
+
         }
 
-        return payload; 
+        return payload;
     }
 }
