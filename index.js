@@ -10,6 +10,7 @@ const Menu = require('./intents/foodMenu');
 const bookNow = require('./intents/booknow');
 const bookNowYes = require('./intents/booknowyes');
 const bookNowNo = require('./intents/booknowno');
+const order = require('./intents/order'); 
 
 process.env.DEBUG = 'dialogflow:debug'; // enables lib debugging statements
 
@@ -78,6 +79,11 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         return response.json(Response);
     }
 
+    const orderFood = () => {
+        const Response = order.cardFun();
+        return response.json(Response); 
+    }
+
     const exit = (agent) => {
 
         agent.add(`Bye. Will See You Again`); 
@@ -90,11 +96,13 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     intentMap.set('ContactUs', contactUs);
     intentMap.set('HotelBookingWelcome', hotelBookingwelcome);
     intentMap.set('Book Hotel', bookHotel);
-    intentMap.set('food bot', foodOrderBot);
-    intentMap.set('food delivery', foodMenu);
     intentMap.set('book now', BookNow);
     intentMap.set('book now - yes', BookNowYes);
     intentMap.set('book now - no', BookNowNo);
+    intentMap.set('food bot', foodOrderBot);
+    intentMap.set('food delivery', foodMenu);
+    intentMap.set('order', orderFood); 
     intentMap.set('Exit', exit);
     _agent.handleRequest(intentMap);
 });
+
