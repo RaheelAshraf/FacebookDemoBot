@@ -19,7 +19,7 @@ module.exports = {
                                                 {
                                                     "type": "postback",
                                                     "title": "Book Now",
-                                                    "payload": "Book Now"
+                                                    "payload": " book first hotel"
                                                 }
                                             ],
                                             "subtitle": "5 Star \nPrice: $100 Per Day"
@@ -31,7 +31,7 @@ module.exports = {
                                                 {
                                                     "type": "postback",
                                                     "title": "Book Now",
-                                                    "payload": "Book Now"
+                                                    "payload": "book second hotel"
                                                 }
                                             ],
                                             "subtitle": "4 Star \nPrice: $60 Per Day"
@@ -43,7 +43,7 @@ module.exports = {
                                                 {
                                                     "type": "postback",
                                                     "title": "Book Now",
-                                                    "payload": "Book Now"
+                                                    "payload": "book third hotel"
                                                 }
                                             ],
                                             "subtitle": "7 Star \nPrice: 250$ Per Day"
