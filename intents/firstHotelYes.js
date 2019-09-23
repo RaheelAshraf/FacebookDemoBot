@@ -8,24 +8,21 @@ module.exports = {
                 {
                     "text": {
                         "text": [
-                            "Thank you for booking with demo bot"
+                            `Thank you for booking with demo bot`
                         ]
                     },
                     "platform": "FACEBOOK"
                 },
                 {
-                    "quickReplies": {
-                      "title": "Your order has been placed successfully",
-                      "quickReplies": [
-                          "Book Again",
-                        "Main Menu",
-                        "Exit"
-                      ]
+                    "text": {
+                        "text": [
+                            `We will get back to you ASAP`
+                        ]
                     },
                     "platform": "FACEBOOK"
-                  }
+                }
             ]
         }
-        return payload; 
+        return payload;
     }
 }
