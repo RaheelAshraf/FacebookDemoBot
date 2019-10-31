@@ -7,7 +7,7 @@ module.exports = {
                 {
                     "text": {
                         "text": [
-                            "welcome to demo chatbot"
+                            "welcome to demobot"
                         ]
                     },
                     "platform": "FACEBOOK"

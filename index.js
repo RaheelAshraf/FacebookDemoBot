@@ -44,7 +44,8 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     }
 
     const contactUs = (agent) => {
-        agent.add('You can contact us on: \n labkoat@gmail.com');
+        agent.add(`You can contact me us 
+labkoat@gmail.com`);
     }
 
     const hotelBookingwelcome = () => {
