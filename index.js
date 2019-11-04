@@ -29,7 +29,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     const _agent = new WebhookClient({ request: request, response: response });
     console.log('Dialogflow Request headers: ' + JSON.stringify(request.headers));
     console.log('Dialogflow Request body: ' + JSON.stringify(request.body));
-    // const userId = _agent.originalRequest.payload.data.sender.id;
+   // // const userId = _agent.originalRequest.payload.data.sender.id;
 
     const welcome = () => {
         const Response = welcomeMessage.cardFun();
@@ -62,7 +62,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         const Response = BookHotel.cardFun();
         return response.json(Response);
     }
-
 
     const firstHotel = () => {
         const Response = firsthotel.cardFun();
