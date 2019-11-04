@@ -17,7 +17,6 @@ module.exports = {
                       "title": "How can I help you?",
                       "quickReplies": [
                         "Book Hotel",
-                        "Main Menu",
                         "Exit"
                       ]
                     },
