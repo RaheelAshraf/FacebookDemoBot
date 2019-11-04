@@ -17,6 +17,11 @@ const thirdhotelno = require('./intents/thirdHotelNo');
 const foodOrder = require('./intents/foodorder');
 const Menu = require('./intents/foodMenu');
 const order = require('./intents/order');
+const chickenBurger = require('./intents/chickenburger');
+const beefBurger = require('./intents/beefburger'); 
+const beverage = require('./intents/beverages');
+const crispyChicken = require('./intents/crispychicken');
+const dessert = require('./intents/desserts'); 
 
 process.env.DEBUG = 'dialogflow:debug'; // enables lib debugging statements
 
@@ -44,8 +49,8 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     }
 
     const contactUs = (agent) => {
-        agent.add(`You can contact me us 
-labkoat@gmail.com`);
+        agent.add(`Sure! We will get back to you soon.`)
+        agent.add(`You can also contact us at labkoat@gmail.com`);
     }
 
     const hotelBookingwelcome = () => {
@@ -121,6 +126,31 @@ labkoat@gmail.com`);
         return response.json(Response);
     }
 
+    const ChickenBurger = () => {
+        const Response = chickenBurger.cardFun();
+        return response.json(Response);
+    }
+
+    const BeefBurger = () => {
+        const Response = beefBurger.cardFun();
+        return response.json(Response);
+    }
+
+    const CrispyChicken = () => {
+        const Response = crispyChicken.cardFun();
+        return response.json(Response);
+    }
+
+    const Dessert = () => {
+        const Response = dessert.cardFun();
+        return response.json(Response);
+    }
+
+    const Beverage = () => {
+        const Response = beverage.cardFun();
+        return response.json(Response);
+    }
+
     const exit = (agent) => {
         agent.add(`Bye. Will See You Again`);
     }
@@ -144,10 +174,14 @@ labkoat@gmail.com`);
     intentMap.set('food bot', foodOrderBot);
     intentMap.set('food delivery', foodMenu);
     intentMap.set('order', orderFood);
+    intentMap.set('chickenBurger', ChickenBurger);
+    intentMap.set('crispyChicken', CrispyChicken);
+    intentMap.set('beefBurger', BeefBurger);
+    intentMap.set('desserts', Dessert);
+    intentMap.set('beverages', Beverage);
     intentMap.set('Exit', exit);
     _agent.handleRequest(intentMap);
 });
-
 
 
 

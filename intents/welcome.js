@@ -22,12 +22,12 @@ module.exports = {
                                         {
                                             "type": 'postback',
                                             "title": 'Show Demo',
-                                            "payload": 'show demo'
+                                            "payload": 'Show Demo'
                                         },
                                         {
                                             "type": 'postback',
-                                            "title": 'Contact Us',
-                                            "payload": 'contact us'
+                                            "title": 'Talk to human 🤵',
+                                            "payload": 'Talk to human 🤵'
                                         },
                                     ],
                                     "template_type": "button"

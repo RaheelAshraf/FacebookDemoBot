@@ -14,12 +14,12 @@ module.exports = {
                                     "buttons": [
                                         {
                                             "type": 'postback',
-                                            "title": 'Food Ordering Bot',
+                                            "title": 'Food Ordering Bot 🍔',
                                             "payload": 'Food Ordering Bot'
                                         },
                                         {
                                             "type": 'postback',
-                                            "title": 'Hotel Booking Bot',
+                                            "title": 'Hotel Booking Bot 🏨',
                                             "payload": 'hotel booking bot'
                                         },
                                     ],

@@ -15,12 +15,12 @@ module.exports = {
                                     "elements": [
                                         {
                                             "image_url": "https://mcdonalds.com.pk/wp-content/uploads/McRoyale-600x600.png",
-                                            "title": "Chicken Burgers",
+                                            "title": "Chicken Burger",
                                             "buttons": [
                                                 {
                                                     "type": "postback",
-                                                    "title": "Order",
-                                                    "payload": "Order",  
+                                                    "title": "Order 🍔",
+                                                    "payload": "chicken burger",
                                                 }
                                             ],
                                             "subtitle": "Price: $5"
@@ -31,32 +31,32 @@ module.exports = {
                                             "buttons": [
                                                 {
                                                     "type": "postback",
-                                                    "title": "Order",
-                                                    "payload": "Order"
+                                                    "title": "Order 🍗",
+                                                    "payload": "crispy chicken"
                                                 }
                                             ],
                                             "subtitle": "Price: $4"
                                         },
                                         {
                                             "image_url": "https://mcdonalds.com.pk/wp-content/uploads/Double-Cheese-Burger-1.png",
-                                            "title": "Beef Burgers",
+                                            "title": "Beef Burger",
                                             "buttons": [
                                                 {
                                                     "type": "postback",
-                                                    "title": "Order",
-                                                    "payload": "Order"
+                                                    "title": "Order 🍔",
+                                                    "payload": "beef burger"
                                                 }
                                             ],
                                             "subtitle": "Price: $6"
                                         },
                                         {
                                             "image_url": "https://mcdonalds.com.pk/wp-content/uploads/Chocolate-and-Strawberry-Sundae-600x600.png",
-                                            "title": "Sides and Deserts",
+                                            "title": "Sides and Desserts",
                                             "buttons": [
                                                 {
                                                     "type": "postback",
-                                                    "title": "Order",
-                                                    "payload": "Order"
+                                                    "title": "Order 🍨",
+                                                    "payload": "dessert"
                                                 }
                                             ],
                                             "subtitle": "Price: $2"
@@ -67,8 +67,8 @@ module.exports = {
                                             "buttons": [
                                                 {
                                                     "type": "postback",
-                                                    "title": "Order",
-                                                    "payload": "Order"
+                                                    "title": "Order 🥤",
+                                                    "payload": "beverages"
                                                 }
                                             ],
                                             "subtitle": "Price: $1"

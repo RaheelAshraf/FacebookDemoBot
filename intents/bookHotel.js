@@ -18,7 +18,7 @@ module.exports = {
                                             "buttons": [
                                                 {
                                                     "type": "postback",
-                                                    "title": "Book Now",
+                                                    "title": "Book Now 🏨",
                                                     "payload": " book first hotel"
                                                 }
                                             ],
@@ -30,7 +30,7 @@ module.exports = {
                                             "buttons": [
                                                 {
                                                     "type": "postback",
-                                                    "title": "Book Now",
+                                                    "title": "Book Now 🏨",
                                                     "payload": "book second hotel"
                                                 }
                                             ],
@@ -42,7 +42,7 @@ module.exports = {
                                             "buttons": [
                                                 {
                                                     "type": "postback",
-                                                    "title": "Book Now",
+                                                    "title": "Book Now 🏨",
                                                     "payload": "book third hotel"
                                                 }
                                             ],

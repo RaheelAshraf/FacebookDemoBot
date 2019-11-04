@@ -10,16 +10,16 @@ module.exports = {
                         "facebook": {
                             "attachment": {
                                 "payload": {
-                                    "text": "Sure You can order you food here",
+                                    "text": "Sure! Please Select an Option Below",
                                     "buttons": [
                                         {
                                             "type": 'postback',
-                                            "title": 'Begin Delivery Order',
+                                            "title": 'Begin Delivery Order 🛵',
                                             "payload": 'Begin Delivery Order'
                                         },
                                         {
                                             "type": 'postback',
-                                            "title": 'Question/Complaint',
+                                            "title": 'Question/Complaint ☎️',
                                             "payload": 'Question/Complaint'
                                         },
                                     ],
