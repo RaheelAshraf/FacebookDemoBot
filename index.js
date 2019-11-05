@@ -22,6 +22,7 @@ const beefBurger = require('./intents/beefburger');
 const beverage = require('./intents/beverages');
 const crispyChicken = require('./intents/crispychicken');
 const dessert = require('./intents/desserts'); 
+const complaint = require('./intents/complaint'); 
 
 process.env.DEBUG = 'dialogflow:debug'; // enables lib debugging statements
 
@@ -150,6 +151,11 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         return response.json(Response);
     }
 
+    const Complaint = () => {
+        const Response = complaint.cardFun();
+        return response.json(Response);
+    }
+
     const exit = (agent) => {
         agent.add(`Bye. Will See You Again`);
     }
@@ -178,6 +184,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     intentMap.set('beefBurger', BeefBurger);
     intentMap.set('desserts', Dessert);
     intentMap.set('beverages', Beverage);
+    intentMap.set('complaint', Complaint);
     intentMap.set('Exit', exit);
     _agent.handleRequest(intentMap);
 });

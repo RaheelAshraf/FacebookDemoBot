@@ -20,7 +20,7 @@ module.exports = {
                                         {
                                             "type": 'postback',
                                             "title": 'Question/Complaint ☎️',
-                                            "payload": 'Question/Complaint'
+                                            "payload": 'complaint'
                                         },
                                     ],
                                     "template_type": "button"
